@@ -2,21 +2,6 @@
 #define _POSIX_C_SOURCE 200112L   /* getaddrinfo, freeaddrinfo, gai_strerror */
 #define _GNU_SOURCE               /* strdup, non-blocking connect extras      */
 
-/**
- * portscanner.c — TCP connect-based port scanner.
- *
- * C language features demonstrated
- * ─────────────────────────────────
- *  global variables  – g_timeout_ms, g_verbose, g_target_host
- *  extern            – declared in portscanner.h, defined here
- *  static            – static helper functions and a static service table
- *  malloc / calloc   – initial result array allocation with calloc()
- *  realloc           – growing the result array when needed
- *  argc / argv       – CLI argument parsing in main()
- *
- * Build:  see Makefile
- * Usage:  ./portscanner <host> [start_port] [end_port] [-v] [-t timeout_ms]
- */
 
 #include "portscanner.h"
 
